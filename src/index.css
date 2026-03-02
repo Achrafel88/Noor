@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spiritual-dark: #043927;
+  --color-spiritual-light: #FDFCF7;
+  --color-spiritual-emerald: #065F46;
+  --color-spiritual-accent: #10B981;
+  --color-spiritual-glow: #34D399;
+  
+  --font-amiri: "Amiri", serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply text-spiritual-dark font-inter antialiased min-h-screen transition-colors duration-500;
+    background-color: #FDFCF7;
+    position: relative;
+  }
+
+  /* Fixed Pattern Layer */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.04;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-repeat: repeat;
+    pointer-events: none;
+  }
+}
+
+.spiritual-gradient {
+  @apply bg-gradient-to-br from-spiritual-emerald to-spiritual-dark;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-spiritual-emerald/20 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-spiritual-emerald/40;
+}

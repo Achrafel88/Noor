@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+server/node_modules/
+
+# production build
+dist/
+
+# env files
+.env
+server/.env
+
+# logs
+*.log
+
+# system
+.DS_Store

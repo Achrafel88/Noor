@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor | Spiritual Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              spiritual: {
+                dark: "#0F172A",
+                light: "#FDFCF7",
+                emerald: "#065F46",
+                gold: "#D97706",
+                accent: "#10B981",
+              },
+            },
+            fontFamily: {
+              amiri: ["Amiri", "serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style type="text/css">
+      @font-face {
+        font-family: 'Amiri';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/amiri/v17/m8JWjf_ebfVfTPXmX_Y.woff2) format('woff2');
+      }
+      body {
+        background-color: #FDFCF7;
+        color: #0F172A;
+        font-family: 'Inter', sans-serif;
+      }
+      .font-amiri {
+        font-family: 'Amiri', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
